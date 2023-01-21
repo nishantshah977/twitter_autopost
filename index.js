@@ -1,4 +1,5 @@
 require("replup").config();
+
 const axios = require('axios');
 const Twit = require('twit');
 
@@ -36,7 +37,7 @@ let post = `#${category} \n\n #Question: ${que} \n\n Answer: ${ans}`;
   });
 }
 
-// Post a tweet every 1 hour (3600000 milliseconds)
+
 setInterval(start,30000);
 
 
